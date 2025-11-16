@@ -18,13 +18,6 @@ type MembershipData = {
   nextPayment?: string;
 };
 
-const tipsA = [
-  "Warm up 7–10 minutes before heavy lifting.",
-  "Progressive overload is the key to gains — increase load gradually.",
-  "Prioritise sleep — muscle recovery happens while you rest.",
-  "Measure performance, not just weight — track reps and tempo.",
-];
-
 const tipsB = [
   "Hydrate before, during and after your session.",
   "Include mobility work 2–3 times a week.",
@@ -56,7 +49,6 @@ const itemVariants = {
 const Membership: React.FC = () => {
   const [data, setData] = useState<MembershipData | null>(null);
   const [loading, setLoading] = useState(true);
-  const [tipIndexA, setTipIndexA] = useState(0);
   const [tipIndexB, setTipIndexB] = useState(0);
   const navigate = useNavigate();
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { ArrowRight, Pause, Play, SkipForward } from "lucide-react";
+import { Pause, Play, SkipForward } from "lucide-react";
 
 type Exercise = {
   id: number;

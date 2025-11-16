@@ -1,4 +1,3 @@
-import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { removeFromCart, addToCart } from './cartSlice'
 import type { RootState } from './store'

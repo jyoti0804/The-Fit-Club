@@ -402,7 +402,7 @@ const MemberList: React.FC = () => {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
 
-  const { data: members = [], isLoading, isError, refetch, isFetching } = useQuery<Member[], Error>({
+  const { data: members = [], refetch } = useQuery<Member[], Error>({
     queryKey: ["members"],
     queryFn: fetchMembers,
     staleTime: 1000 * 60 * 2,
